@@ -1,0 +1,41 @@
+C:\Users\SRT\Desktop\svt_debug\win64\ffmpeg_lib_win64>SvtAv1EncApp.exe -i input_2k_420_10bit.yuv -b out_yuv_app.ivf -w 1920 -h 1080 -n 2 --fps 24 --keyint 23 --input-depth 10 --compressed-ten-bit-format 0 --rc 0 -q 27 --preset 8
+-------------------------------------------
+SVT [version]:  SVT-AV1 Encoder Lib v0.8.4
+SVT [build]  :  GCC 8.3.0        zu bit
+LIB Build date: Aug 25 2020 14:28:53
+-------------------------------------------
+Number of logical cores available: 12
+Number of PPCS 78
+[asm level on system : up to avx2]
+[asm level selected : up to avx2]
+-------------------------------------------
+SVT [config]: Main Profile      Tier (auto)     Level (auto)
+SVT [config]: EncoderMode                                                       : 8
+SVT [config]: EncoderBitDepth / EncoderColorFormat / CompressedTenBitFormat     : 10 / 1 / 0
+SVT [config]: SourceWidth / SourceHeight                                        : 1920 / 1080
+SVT [config]: FrameRate / Gop Size                                              : 24 / 24
+SVT [config]: HierarchicalLevels  / PredStructure               : 4 / 2
+SVT [config]: BRC Mode / QP  / LookaheadDistance / SceneChange                  : CQP / 27 / 33 / 0
+-------------------------------------------
+SvtMalloc[info]: SVT Memory Usage:
+SvtMalloc[info]:     total allocated memory:       3.26 GB
+SvtMalloc[info]:         malloced memory:          857.65 MB
+SvtMalloc[info]:         callocated memory:        66.87 MB
+SvtMalloc[info]:         allocated aligned memory: 2.36 GB
+SvtMalloc[info]:     mutex count: zu
+SvtMalloc[info]:     semaphore count: zu
+SvtMalloc[info]:     thread count: zu
+SvtMalloc[info]:     hash table fulless: 0.074421, hash bucket is healthy
+SvtMalloc[info]: top 10 malloced memory locations:
+SvtMalloc[info]: (337.68 MB): /home/srt/Desktop/hdr/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Encoder/Codec/EbCodingUnit.c:57
+SvtMalloc[info]: (90.29 MB): /home/srt/Desktop/hdr/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Encoder/Codec/EbPictureControlSet.c:106
+SvtMalloc[info]: (74.17 MB): /home/srt/Desktop/hdr/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Encoder/Codec/EbPictureControlSet.c:107
+SvtMalloc[info]: (61.26 MB): /home/srt/Desktop/hdr/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Encoder/Codec/EbPictureControlSet.c:1219
+SvtMalloc[info]: (41.93 MB): /home/srt/Desktop/hdr/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Encoder/Codec/EbModeDecisionProcess.c:154
+SvtMalloc[info]: (32.16 MB): /home/srt/Desktop/hdr/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Encoder/Codec/EbPictureControlSet.c:531
+SvtMalloc[info]: (27.61 MB): /home/srt/Desktop/hdr/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Encoder/Codec/EbModeDecisionProcess.c:335
+SvtMalloc[info]: (19.91 MB): /home/srt/Desktop/hdr/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Common/Codec/EbRestoration.c:1902
+SvtMalloc[info]: (19.91 MB): /home/srt/Desktop/hdr/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Common/Codec/EbRestoration.c:1903
+SvtMalloc[info]: (17.20 MB): /home/srt/Desktop/hdr/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Common/Codec/EbBitstreamUnit.c:40
+Encoding
+C:\Users\SRT\Desktop\svt_debug\win64\ffmpeg_lib_win64>
