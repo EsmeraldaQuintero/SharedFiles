@@ -1,0 +1,146 @@
+C:\Users\myuser\Desktop\svt_debug\win64\ffmpeg_lib_win64>gdb SvtAv1EncApp
+GNU gdb (GDB) 8.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-w64-mingw32".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from SvtAv1EncApp...done.
+<ps 24 --keyint 23 --input-depth 10 --compressed-ten-bit-format 0 --rc 0 -q 27 --preset 0 > out_log.txt
+Starting program: C:\Users\myuser\Desktop\svt_debug\win64\ffmpeg_lib_win64\SvtAv1EncApp.exe -i input_2k_420_10bit.yuv -b out_yuv_app.ivf -w 1920 -h 1080 -n 2 --fps 24 --keyint 23 --input-depth 10 --compressed-ten-bit-format 0 --rc 0 -q 27 --preset 0 > out_log.txt
+[New Thread 29936.0x78dc]
+[New Thread 29936.0x45f4]
+[New Thread 29936.0x600c]
+[New Thread 29936.0x9c8]
+warning: [30940] [SECUHK64:PDFFileAPIHook_StartFileHookAPI:135]enter PDFFileAPIHook_StartFileHookAPI!!!!
+[New Thread 29936.0x4574]
+[New Thread 29936.0x72d0]
+-------------------------------------------
+SVT [version]:  SVT-AV1 Encoder Lib v0.8.4
+SVT [build]  :  GCC 8.3.0        zu bit
+LIB Build date: Aug 25 2020 14:28:53
+-------------------------------------------
+Number of logical cores available: 12
+Number of PPCS 78
+[asm level on system : up to avx2]
+[asm level selected : up to avx2]
+-------------------------------------------
+SVT [config]: Main Profile      Tier (auto)     Level (auto)
+SVT [config]: EncoderMode                                                       : 0
+SVT [config]: EncoderBitDepth / EncoderColorFormat / CompressedTenBitFormat     : 10 / 1 / 0
+SVT [config]: SourceWidth / SourceHeight                                        : 1920 / 1080
+SVT [config]: FrameRate / Gop Size                                              : 24 / 24
+SVT [config]: HierarchicalLevels  / PredStructure               : 4 / 2
+SVT [config]: BRC Mode / QP  / LookaheadDistance / SceneChange                  : CQP / 27 / 33 / 0
+-------------------------------------------
+[New Thread 29936.0xd58]
+[New Thread 29936.0x6f28]
+[New Thread 29936.0x573c]
+[New Thread 29936.0x456c]
+[New Thread 29936.0x796c]
+[New Thread 29936.0x7854]
+[New Thread 29936.0x11ac]
+[New Thread 29936.0x7588]
+[New Thread 29936.0x54e8]
+[New Thread 29936.0x3300]
+[New Thread 29936.0x6280]
+[New Thread 29936.0x5b60]
+[New Thread 29936.0x7268]
+[New Thread 29936.0x5b5c]
+[New Thread 29936.0x7344]
+[New Thread 29936.0x6c68]
+[New Thread 29936.0x530c]
+[New Thread 29936.0x75f8]
+[New Thread 29936.0x7990]
+[New Thread 29936.0x70bc]
+[New Thread 29936.0x5b20]
+[New Thread 29936.0x7464]
+[New Thread 29936.0x67ec]
+[New Thread 29936.0x4054]
+[New Thread 29936.0x7480]
+[New Thread 29936.0x7508]
+[New Thread 29936.0x7a1c]
+[New Thread 29936.0x7a80]
+[New Thread 29936.0x3f5c]
+[New Thread 29936.0x66fc]
+[New Thread 29936.0x16b4]
+[New Thread 29936.0x761c]
+[New Thread 29936.0x524c]
+[New Thread 29936.0x74fc]
+[New Thread 29936.0x673c]
+[New Thread 29936.0x6ff8]
+[New Thread 29936.0x67c8]
+[New Thread 29936.0x68d0]
+[New Thread 29936.0x3b70]
+[New Thread 29936.0x6050]
+[New Thread 29936.0x62d0]
+[New Thread 29936.0x6278]
+[New Thread 29936.0x3308]
+[New Thread 29936.0x4908]
+[New Thread 29936.0x7924]
+[New Thread 29936.0x5d6c]
+[New Thread 29936.0x13a0]
+[New Thread 29936.0x5de4]
+[New Thread 29936.0x27ac]
+[New Thread 29936.0x5174]
+[New Thread 29936.0x695c]
+[New Thread 29936.0x4328]
+[New Thread 29936.0x7700]
+[New Thread 29936.0x5fcc]
+[New Thread 29936.0x43b8]
+[New Thread 29936.0x7898]
+[New Thread 29936.0x6fe8]
+[New Thread 29936.0x75bc]
+[New Thread 29936.0x36c]
+[New Thread 29936.0x61e8]
+[New Thread 29936.0x611c]
+[New Thread 29936.0x780c]
+[New Thread 29936.0x752c]
+[New Thread 29936.0x565c]
+[New Thread 29936.0x7954]
+[New Thread 29936.0x1c5c]
+[New Thread 29936.0x4b7c]
+[New Thread 29936.0x649c]
+[New Thread 29936.0x725c]
+[New Thread 29936.0x3c6c]
+[New Thread 29936.0x68b8]
+[New Thread 29936.0x7a8c]
+[New Thread 29936.0x6f14]
+[New Thread 29936.0x7ac0]
+[New Thread 29936.0x7b6c]
+SvtMalloc[info]: SVT Memory Usage:
+SvtMalloc[info]:     total allocated memory:       4.09 GB
+SvtMalloc[info]:         malloced memory:          1.25 GB
+SvtMalloc[info]:         callocated memory:        66.62 MB
+SvtMalloc[info]:         allocated aligned memory: 2.77 GB
+SvtMalloc[info]:     mutex count: zu
+SvtMalloc[info]:     semaphore count: zu
+SvtMalloc[info]:     thread count: zu
+SvtMalloc[info]:     hash table fulless: 0.077415, hash bucket is healthy
+SvtMalloc[info]: top 10 malloced memory locations:
+SvtMalloc[info]: (357.54 MB): /home/myuser/Desktop/hdr/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Encoder/Codec/EbCodingUnit.c:57
+SvtMalloc[info]: (168.38 MB): /home/myuser/Desktop/hdr/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Encoder/Codec/EbModeDecisionProcess.c:154
+SvtMalloc[info]: (110.81 MB): /home/myuser/Desktop/hdr/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Encoder/Codec/EbModeDecisionProcess.c:335
+SvtMalloc[info]: (90.29 MB): /home/myuser/Desktop/hdr/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Encoder/Codec/EbPictureControlSet.c:106
+SvtMalloc[info]: (77.71 MB): /home/myuser/Desktop/hdr/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Encoder/Codec/EbModeDecisionProcess.c:257
+SvtMalloc[info]: (77.71 MB): /home/myuser/Desktop/hdr/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Encoder/Codec/EbModeDecisionProcess.c:259
+SvtMalloc[info]: (74.17 MB): /home/myuser/Desktop/hdr/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Encoder/Codec/EbPictureControlSet.c:107
+SvtMalloc[info]: (64.86 MB): /home/myuser/Desktop/hdr/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Encoder/Codec/EbPictureControlSet.c:1219
+SvtMalloc[info]: (45.74 MB): /home/myuser/Desktop/hdr/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Encoder/Codec/EbModeDecisionProcess.c:155
+SvtMalloc[info]: (19.91 MB): /home/myuser/Desktop/hdr/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Common/Codec/EbRestoration.c:1903
+Encoding
+Thread 30 received signal SIGSEGV, Segmentation fault.
+[Switching to Thread 29936.0x4054]
+smooth_pred_16x8 (stride=128, dst=0x11df7eef0, r=..., ab=0x11df7ee80, rep=0x11df7edc0,
+    sm_weights_h=0x6fbf40e0 <sm_weights_d_16>, weights_w=0x11df7ee40, left=<optimized out>)
+    at /home/myuser/Desktop/hdr/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Common/ASM_AVX2/EbHighbdIntraPrediction_AVX2.c:1587
+1587    /home/myuser/Desktop/hdr/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Common/ASM_AVX2/EbHighbdIntraPrediction_AVX2.c: No such file or directory.
+(gdb)
