@@ -1,0 +1,425 @@
+doing cmake in /home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Build with PATH=/home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/cross_compilers/mingw-w64-x86_64/bin:$PATH with extra_args=-DCMAKE_INSTALL_PREFIX=/home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/ffmpeg_build/win64 -DCMAKE_BUILD_TYPE=Release -DCPPAN_BUILD=OFF -DENABLE_STATIC_RUNTIME=1 -DBUILD_SHARED_LIBS=1 -DBUILD_STATIC_LIBS=0 like this:
+doing cmake  -G"Unix Makefiles" .. -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_FIND_ROOT_PATH=/home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/ffmpeg_build/win64 -DCMAKE_FIND_ROOT_PATH_MODE_PROGRAM=NEVER -DCMAKE_FIND_ROOT_PATH_MODE_LIBRARY=ONLY -DCMAKE_FIND_ROOT_PATH_MODE_INCLUDE=ONLY -DCMAKE_RANLIB=/home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/cross_compilers/mingw-w64-x86_64/bin/x86_64-w64-mingw32-ranlib -DCMAKE_C_COMPILER=/home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/cross_compilers/mingw-w64-x86_64/bin/x86_64-w64-mingw32-gcc -DCMAKE_CXX_COMPILER=/home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/cross_compilers/mingw-w64-x86_64/bin/x86_64-w64-mingw32-g++ -DCMAKE_RC_COMPILER=/home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/cross_compilers/mingw-w64-x86_64/bin/x86_64-w64-mingw32-windres -DCMAKE_INSTALL_PREFIX=/home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/ffmpeg_build/win64 -DCMAKE_BUILD_TYPE=Release -DCPPAN_BUILD=OFF -DENABLE_STATIC_RUNTIME=1 -DBUILD_SHARED_LIBS=1 -DBUILD_STATIC_LIBS=0
+-- The C compiler identification is GNU 8.3.0
+-- The CXX compiler identification is GNU 8.3.0
+-- Check for working C compiler: /home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/cross_compilers/mingw-w64-x86_64/bin/x86_64-w64-mingw32-gcc
+-- Check for working C compiler: /home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/cross_compilers/mingw-w64-x86_64/bin/x86_64-w64-mingw32-gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/cross_compilers/mingw-w64-x86_64/bin/x86_64-w64-mingw32-g++
+-- Check for working CXX compiler: /home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/cross_compilers/mingw-w64-x86_64/bin/x86_64-w64-mingw32-g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test HAVE_X86_PLATFORM
+-- Performing Test HAVE_X86_PLATFORM - Success
+-- The ASM_NASM compiler identification is YASM
+-- Found assembler: /usr/bin/yasm
+-- BUILD_SHARED_LIBS: 1
+-- Performing Test C_FLAG_Wall
+-- Performing Test C_FLAG_Wall - Success
+-- Performing Test CXX_FLAG_Wall
+-- Performing Test CXX_FLAG_Wall - Success
+-- Performing Test C_FLAG_Wextra
+-- Performing Test C_FLAG_Wextra - Success
+-- Performing Test CXX_FLAG_Wextra
+-- Performing Test CXX_FLAG_Wextra - Success
+-- Performing Test C_FLAG_Wformat
+-- Performing Test C_FLAG_Wformat - Success
+-- Performing Test CXX_FLAG_Wformat
+-- Performing Test CXX_FLAG_Wformat - Success
+-- Performing Test C_FLAG_Wformat_security
+-- Performing Test C_FLAG_Wformat_security - Success
+-- Performing Test CXX_FLAG_Wformat_security
+-- Performing Test CXX_FLAG_Wformat_security - Success
+-- Performing Test C_FLAG_mxsave
+-- Performing Test C_FLAG_mxsave - Success
+-- Performing Test CXX_FLAG_mxsave
+-- Performing Test CXX_FLAG_mxsave - Success
+-- Performing Test C_FLAG_fno_asynchronous_unwind_tables
+-- Performing Test C_FLAG_fno_asynchronous_unwind_tables - Success
+-- Performing Test CXX_FLAG_fno_asynchronous_unwind_tables
+-- Performing Test CXX_FLAG_fno_asynchronous_unwind_tables - Success
+-- Looking for _mm512_extracti64x4_epi64
+-- Looking for _mm512_extracti64x4_epi64 - not found
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Performing Test C_FLAG_msse2
+-- Performing Test C_FLAG_msse2 - Success
+-- Performing Test C_FLAG_mssse3
+-- Performing Test C_FLAG_mssse3 - Success
+-- Performing Test C_FLAG_msse4_1
+-- Performing Test C_FLAG_msse4_1 - Success
+-- Performing Test C_FLAG_mavx2
+-- Performing Test C_FLAG_mavx2 - Success
+-- Performing Test C_FLAG_mavx512f
+-- Performing Test C_FLAG_mavx512f - Success
+-- Performing Test C_FLAG_mavx512bw
+-- Performing Test C_FLAG_mavx512bw - Success
+-- Performing Test C_FLAG_mavx512dq
+-- Performing Test C_FLAG_mavx512dq - Success
+-- Performing Test C_FLAG_mavx512vl
+-- Performing Test C_FLAG_mavx512vl - Success
+CMake Warning at third_party/cpuinfo/CMakeLists.txt:51 (MESSAGE):
+  Target processor architecture is not specified.  cpuinfo will compile, but
+  cpuinfo_initialize() will always fail.
+
+
+-- Configuring done
+CMake Warning (dev) at third_party/cpuinfo/CMakeLists.txt:105 (ADD_LIBRARY):
+  Policy CMP0063 is not set: Honor visibility properties for all target
+  types.  Run "cmake --help-policy CMP0063" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  Target "cpuinfo" of type "OBJECT_LIBRARY" has the following visibility
+  properties set for C:
+
+    C_VISIBILITY_PRESET
+
+  For compatibility CMake is not honoring them for this target.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at third_party/cpuinfo/deps/clog/CMakeLists.txt:36 (ADD_LIBRARY):
+  Policy CMP0063 is not set: Honor visibility properties for all target
+  types.  Run "cmake --help-policy CMP0063" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  Target "clog" of type "OBJECT_LIBRARY" has the following visibility
+  properties set for C:
+
+    C_VISIBILITY_PRESET
+
+  For compatibility CMake is not honoring them for this target.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    BUILD_STATIC_LIBS
+    CMAKE_FIND_ROOT_PATH
+    CMAKE_FIND_ROOT_PATH_MODE_LIBRARY
+    CPPAN_BUILD
+    ENABLE_STATIC_RUNTIME
+
+
+-- Build files have been written to: /home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Build
+
+Making /home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Build as $ PATH=/home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/cross_compilers/mingw-w64-x86_64/bin:$PATH make  -j 4
+
+Scanning dependencies of target safestringlib
+Scanning dependencies of target COMMON_CODEC
+Scanning dependencies of target COMMON_C_DEFAULT
+Scanning dependencies of target COMMON_ASM_SSE2
+[  1%] Building C object Source/Lib/Common/C_DEFAULT/CMakeFiles/COMMON_C_DEFAULT.dir/EbBlend_a64_mask_c.c.obj
+[  1%] Building C object third_party/safestringlib/CMakeFiles/safestringlib.dir/__/__/dummy.c.obj
+[  1%] Building C object Source/Lib/Common/ASM_SSE2/CMakeFiles/COMMON_ASM_SSE2.dir/EbAvcStyleMcp_Intrinsic_SSE2.c.obj
+[  2%] Building C object third_party/safestringlib/CMakeFiles/safestringlib.dir/safe_str_constraint.c.obj
+[  2%] Building C object Source/Lib/Common/C_DEFAULT/CMakeFiles/COMMON_C_DEFAULT.dir/EbInterPrediction_c.c.obj
+[  2%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbBitstreamUnit.c.obj
+[  2%] Building C object third_party/safestringlib/CMakeFiles/safestringlib.dir/ignore_handler_s.c.obj
+[  2%] Building C object Source/Lib/Common/C_DEFAULT/CMakeFiles/COMMON_C_DEFAULT.dir/EbIntraPrediction_c.c.obj
+[  3%] Building C object third_party/safestringlib/CMakeFiles/safestringlib.dir/strnlen_s.c.obj
+[  3%] Built target safestringlib
+Scanning dependencies of target COMMON_ASM_SSSE3
+[  3%] Building C object Source/Lib/Common/ASM_SSSE3/CMakeFiles/COMMON_ASM_SSSE3.dir/EbHighbdIntraPrediction_Intrinsic_SSSE3.c.obj
+[  4%] Building C object Source/Lib/Common/C_DEFAULT/CMakeFiles/COMMON_C_DEFAULT.dir/EbPackUnPack_C.c.obj
+[  4%] Building C object Source/Lib/Common/ASM_SSE2/CMakeFiles/COMMON_ASM_SSE2.dir/EbDeblockingFilter_Intrinsic_SSE2.c.obj
+[  5%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbBlend_a64_mask.c.obj
+[  5%] Building C object Source/Lib/Common/C_DEFAULT/CMakeFiles/COMMON_C_DEFAULT.dir/EbPictureOperators_C.c.obj
+[  5%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbBlockStructures.c.obj
+[  5%] Building C object Source/Lib/Common/C_DEFAULT/CMakeFiles/COMMON_C_DEFAULT.dir/cfl_c.c.obj
+[  6%] Building C object Source/Lib/Common/C_DEFAULT/CMakeFiles/COMMON_C_DEFAULT.dir/filterintra_c.c.obj
+[  7%] Building C object Source/Lib/Common/ASM_SSSE3/CMakeFiles/COMMON_ASM_SSSE3.dir/av1_inv_txfm_ssse3.c.obj
+[  7%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbCabacContextModel.c.obj
+[  8%] Building C object Source/Lib/Common/ASM_SSE2/CMakeFiles/COMMON_ASM_SSE2.dir/EbIntraPrediction_AV1_Intrinsic_SSE2.c.obj
+[  8%] Built target COMMON_C_DEFAULT
+Scanning dependencies of target COMMON_ASM_SSE4_1
+[  8%] Building C object Source/Lib/Common/ASM_SSE4_1/CMakeFiles/COMMON_ASM_SSE4_1.dir/EbBlend_a64_mask_sse4.c.obj
+[  9%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbCdef.c.obj
+[  9%] Building C object Source/Lib/Common/ASM_SSE2/CMakeFiles/COMMON_ASM_SSE2.dir/EbPackUnPack_Intrinsic_SSE2.c.obj
+[  9%] Building C object Source/Lib/Common/ASM_SSE2/CMakeFiles/COMMON_ASM_SSE2.dir/EbPictureOperators_Intrinsic_SSE2.c.obj
+[ 10%] Building C object Source/Lib/Common/ASM_SSE4_1/CMakeFiles/COMMON_ASM_SSE4_1.dir/EbIntraPrediction16bit_Intrinsic_SSE4_1.c.obj
+[ 10%] Building C object Source/Lib/Common/ASM_SSE4_1/CMakeFiles/COMMON_ASM_SSE4_1.dir/filterintra_sse4.c.obj
+[ 10%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbDeblockingCommon.c.obj
+[ 11%] Building C object Source/Lib/Common/ASM_SSE2/CMakeFiles/COMMON_ASM_SSE2.dir/highbd_intrapred_sse2.c.obj
+[ 12%] Building C object Source/Lib/Common/ASM_SSE4_1/CMakeFiles/COMMON_ASM_SSE4_1.dir/highbd_inv_txfm_sse4.c.obj
+[ 12%] Building C object Source/Lib/Common/ASM_SSE2/CMakeFiles/COMMON_ASM_SSE2.dir/highbd_subtract_sse2.c.obj
+[ 13%] Building ASM_NASM object Source/Lib/Common/ASM_SSE2/CMakeFiles/COMMON_ASM_SSE2.dir/intrapred_sse2.asm.obj
+[ 13%] Building C object Source/Lib/Common/ASM_SSSE3/CMakeFiles/COMMON_ASM_SSSE3.dir/intrapred_ssse3.c.obj
+[ 13%] Building ASM_NASM object Source/Lib/Common/ASM_SSE2/CMakeFiles/COMMON_ASM_SSE2.dir/EbPictureOperators_SSE2.asm.obj
+[ 13%] Building ASM_NASM object Source/Lib/Common/ASM_SSE2/CMakeFiles/COMMON_ASM_SSE2.dir/highbd_intrapred_sse2_.asm.obj
+[ 13%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbInterPrediction.c.obj
+[ 14%] Building ASM_NASM object Source/Lib/Common/ASM_SSE2/CMakeFiles/COMMON_ASM_SSE2.dir/aom_subpixel_8t_sse2.asm.obj
+[ 14%] Building ASM_NASM object Source/Lib/Common/ASM_SSE2/CMakeFiles/COMMON_ASM_SSE2.dir/subtract_sse2.asm.obj
+[ 14%] Built target COMMON_ASM_SSE2
+Scanning dependencies of target COMMON_ASM_AVX2
+[ 14%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/EbBlend_a64_mask_avx2.c.obj
+[ 14%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/EbHighbdIntraPrediction_AVX2.c.obj
+[ 14%] Building C object Source/Lib/Common/ASM_SSSE3/CMakeFiles/COMMON_ASM_SSSE3.dir/reconinter_ssse3.c.obj
+[ 14%] Building C object Source/Lib/Common/ASM_SSE4_1/CMakeFiles/COMMON_ASM_SSE4_1.dir/highbd_warp_plane_sse4.c.obj
+[ 15%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbIntraPrediction.c.obj
+[ 16%] Building ASM_NASM object Source/Lib/Common/ASM_SSSE3/CMakeFiles/COMMON_ASM_SSSE3.dir/aom_subpixel_bilinear_ssse3.asm.obj
+[ 16%] Built target COMMON_ASM_SSSE3
+Scanning dependencies of target COMMON_ASM_AVX512
+[ 17%] Building C object Source/Lib/Common/ASM_AVX512/CMakeFiles/COMMON_ASM_AVX512.dir/EbHighbdIntraPrediction_AVX512.c.obj
+[ 17%] Building C object Source/Lib/Common/ASM_AVX512/CMakeFiles/COMMON_ASM_AVX512.dir/EbPictureOperators_Intrinsic_AVX512.c.obj
+[ 17%] Building C object Source/Lib/Common/ASM_AVX512/CMakeFiles/COMMON_ASM_AVX512.dir/cdef_block_avx512.c.obj
+[ 18%] Building C object Source/Lib/Common/ASM_AVX512/CMakeFiles/COMMON_ASM_AVX512.dir/convolve_2d_avx512.c.obj
+[ 18%] Building C object Source/Lib/Common/ASM_AVX512/CMakeFiles/COMMON_ASM_AVX512.dir/convolve_avx512.c.obj
+[ 18%] Building C object Source/Lib/Common/ASM_AVX512/CMakeFiles/COMMON_ASM_AVX512.dir/highbd_inv_txfm_avx512.c.obj
+[ 19%] Building C object Source/Lib/Common/ASM_AVX512/CMakeFiles/COMMON_ASM_AVX512.dir/jnt_convolve_2d_avx512.c.obj
+[ 19%] Built target COMMON_ASM_SSE4_1
+Scanning dependencies of target clog
+[ 19%] Building C object third_party/cpuinfo/deps/clog/CMakeFiles/clog.dir/src/clog.c.obj
+[ 19%] Building C object Source/Lib/Common/ASM_AVX512/CMakeFiles/COMMON_ASM_AVX512.dir/jnt_convolve_avx512.c.obj
+[ 20%] Building C object Source/Lib/Common/ASM_AVX512/CMakeFiles/COMMON_ASM_AVX512.dir/wiener_convolve_avx512.c.obj
+[ 20%] Built target COMMON_ASM_AVX512
+Scanning dependencies of target ENCODER_C_DEFAULT
+[ 20%] Building C object Source/Lib/Encoder/C_DEFAULT/CMakeFiles/ENCODER_C_DEFAULT.dir/EbComputeSAD_C.c.obj
+[ 20%] Built target clog
+Scanning dependencies of target ENCODER_CODEC
+[ 20%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbAdaptiveMotionVectorPrediction.c.obj
+[ 21%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/EbInterPredictionCom_avx2.c.obj
+[ 21%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/EbIntraPrediction_Intrinsic_AVX2.c.obj
+[ 22%] Building C object Source/Lib/Encoder/C_DEFAULT/CMakeFiles/ENCODER_C_DEFAULT.dir/EbComputeVariance_C.c.obj
+[ 22%] Building C object Source/Lib/Encoder/C_DEFAULT/CMakeFiles/ENCODER_C_DEFAULT.dir/EncodeTxbRef_C.c.obj
+[ 23%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbCdefProcess.c.obj
+[ 23%] Building C object Source/Lib/Encoder/C_DEFAULT/CMakeFiles/ENCODER_C_DEFAULT.dir/sad_av1.c.obj
+[ 23%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbCodingLoop.c.obj
+[ 23%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/EbPackUnPack_Intrinsic_AVX2.c.obj
+[ 23%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbCodingUnit.c.obj
+[ 24%] Building C object Source/Lib/Encoder/C_DEFAULT/CMakeFiles/ENCODER_C_DEFAULT.dir/variance.c.obj
+[ 25%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/EbPictureOperators_Intrinsic_AVX2.c.obj
+[ 26%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbDeblockingFilter.c.obj
+[ 26%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbInvTransforms.c.obj
+[ 26%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/aom_subpixel_8t_intrin_avx2.c.obj
+[ 27%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/av1_inv_txfm_avx2.c.obj
+[ 27%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbDlfProcess.c.obj
+[ 28%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbEncCdef.c.obj
+[ 29%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbLog.c.obj
+[ 29%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbMalloc.c.obj
+[ 29%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/cdef_block_avx2.c.obj
+[ 29%] Built target ENCODER_C_DEFAULT
+Scanning dependencies of target EbVersionHeaderGen
+[ 29%] Generating version header
+[ 29%] Built target EbVersionHeaderGen
+Scanning dependencies of target ENCODER_ASM_SSE2
+[ 29%] Building C object Source/Lib/Encoder/ASM_SSE2/CMakeFiles/ENCODER_ASM_SSE2.dir/EbComputeMean_Intrinsic_SSE2.c.obj
+[ 30%] Building C object Source/Lib/Encoder/ASM_SSE2/CMakeFiles/ENCODER_ASM_SSE2.dir/EbMeSadCalculation_Intrinsic_SSE2.c.obj
+[ 30%] Building C object Source/Lib/Encoder/ASM_SSE2/CMakeFiles/ENCODER_ASM_SSE2.dir/encodetxb_sse2.c.obj
+[ 30%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbMcp.c.obj
+[ 30%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbEncDecProcess.c.obj
+[ 30%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/cfl_avx2.c.obj
+[ 31%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbPictureBufferDesc.c.obj
+[ 32%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/convolve_2d_avx2.c.obj
+[ 32%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbPictureOperators.c.obj
+[ 32%] Building C object Source/Lib/Encoder/ASM_SSE2/CMakeFiles/ENCODER_ASM_SSE2.dir/fft_sse2.c.obj
+[ 33%] Building C object Source/Lib/Encoder/ASM_SSE2/CMakeFiles/ENCODER_ASM_SSE2.dir/highbd_variance_sse2.c.obj
+[ 33%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbRestoration.c.obj
+[ 33%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/convolve_avx2.c.obj
+[ 33%] Building C object Source/Lib/Encoder/ASM_SSE2/CMakeFiles/ENCODER_ASM_SSE2.dir/variance_sse2.c.obj
+[ 34%] Building ASM_NASM object Source/Lib/Encoder/ASM_SSE2/CMakeFiles/ENCODER_ASM_SSE2.dir/highbd_variance_impl_sse2.asm.obj
+[ 34%] Building ASM_NASM object Source/Lib/Encoder/ASM_SSE2/CMakeFiles/ENCODER_ASM_SSE2.dir/x64RegisterUtil.asm.obj
+[ 34%] Built target ENCODER_ASM_SSE2
+Scanning dependencies of target ENCODER_ASM_SSSE3
+[ 35%] Building C object Source/Lib/Encoder/ASM_SSSE3/CMakeFiles/ENCODER_ASM_SSSE3.dir/variance_impl_ssse3.c.obj
+[ 35%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/highbd_convolve_2d_avx2.c.obj
+[ 36%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbSegmentationParams.c.obj
+[ 36%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbSuperRes.c.obj
+[ 36%] Built target ENCODER_ASM_SSSE3
+Scanning dependencies of target ENCODER_ASM_SSE4_1
+[ 36%] Building C object Source/Lib/Encoder/ASM_SSE4_1/CMakeFiles/ENCODER_ASM_SSE4_1.dir/EbComputeSAD_Intrinsic_SSE4_1.c.obj
+[ 37%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/highbd_convolve_avx2.c.obj
+[ 37%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/highbd_inv_txfm_avx2.c.obj
+[ 38%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbSystemResourceManager.c.obj
+[ 39%] Building C object Source/Lib/Encoder/ASM_SSE4_1/CMakeFiles/ENCODER_ASM_SSE4_1.dir/EbTemporalFiltering_sse4.c.obj
+[ 39%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbThreads.c.obj
+/home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Common/Codec/EbThreads.c: In function 'svt_create_thread':
+/home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/win64/SVT-AV1_git/Source/Lib/Common/Codec/EbThreads.c:70:9: warning: cast between incompatible function types from 'void * (*)(void *)' to 'DWORD (*)(void *)' {aka 'long unsigned int (*)(void *)'} [-Wcast-function-type]
+         (LPTHREAD_START_ROUTINE)thread_function, // function to be tied to the new thread
+         ^
+[ 39%] Building C object Source/Lib/Encoder/ASM_SSE4_1/CMakeFiles/ENCODER_ASM_SSE4_1.dir/highbd_fwd_txfm_sse4.c.obj
+[ 39%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbTime.c.obj
+[ 40%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbUtility.c.obj
+[ 40%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbEncDecResults.c.obj
+[ 40%] Building C object Source/Lib/Encoder/ASM_SSE4_1/CMakeFiles/ENCODER_ASM_SSE4_1.dir/obmc_variance_sse4.c.obj
+[ 41%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbEncDecSegments.c.obj
+[ 41%] Built target ENCODER_ASM_SSE4_1
+[ 41%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbEncDecTasks.c.obj
+[ 41%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbEncInterPrediction.c.obj
+[ 42%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbEncIntraPrediction.c.obj
+[ 42%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/EbWarpedMotion.c.obj
+[ 42%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/common_dsp_rtcd.c.obj
+[ 43%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/highbd_jnt_convolve_avx2.c.obj
+[ 43%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbEncWarpedMotion.c.obj
+[ 44%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbEncodeContext.c.obj
+[ 44%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/highbd_warp_affine_avx2.c.obj
+[ 44%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/jnt_convolve_2d_avx2.c.obj
+[ 44%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbEntropyCoding.c.obj
+[ 44%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbEntropyCodingProcess.c.obj
+[ 45%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/convolve.c.obj
+[ 46%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbEntropyCodingResults.c.obj
+[ 46%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbFullLoop.c.obj
+[ 46%] Building C object Source/Lib/Common/Codec/CMakeFiles/COMMON_CODEC.dir/grainSynthesis.c.obj
+[ 47%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/jnt_convolve_avx2.c.obj
+[ 47%] Built target COMMON_CODEC
+Scanning dependencies of target ENCODER_ASM_AVX2
+[ 47%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/EbCdef_AVX2.c.obj
+[ 48%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/EbCombinedAveragingSAD_Intrinsic_AVX2.c.obj
+[ 48%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/EbComputeSAD_Intrinsic_AVX2.c.obj
+[ 48%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbGlobalMotionEstimation.c.obj
+[ 48%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/selfguided_avx2.c.obj
+[ 49%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbGlobalMotionEstimationCost.c.obj
+[ 49%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/transpose_avx2.c.obj
+[ 49%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbInitialRateControlProcess.c.obj
+[ 50%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/warp_plane_avx2.c.obj
+[ 51%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbInitialRateControlReorderQueue.c.obj
+[ 51%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbInitialRateControlResults.c.obj
+[ 51%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbMdRateEstimation.c.obj
+[ 51%] Building C object Source/Lib/Common/ASM_AVX2/CMakeFiles/COMMON_ASM_AVX2.dir/wiener_convolve_avx2.c.obj
+[ 52%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbMeSadCalculation.c.obj
+[ 52%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbModeDecision.c.obj
+[ 52%] Built target COMMON_ASM_AVX2
+Scanning dependencies of target ENCODER_ASM_AVX512
+[ 52%] Building C object Source/Lib/Encoder/ASM_AVX512/CMakeFiles/ENCODER_ASM_AVX512.dir/EbCdef_AVX512.c.obj
+[ 52%] Building C object Source/Lib/Encoder/ASM_AVX512/CMakeFiles/ENCODER_ASM_AVX512.dir/EbCombinedAveragingSAD_AVX512.c.obj
+[ 52%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/EbRestorationPick_AVX2.c.obj
+[ 53%] Building C object Source/Lib/Encoder/ASM_AVX512/CMakeFiles/ENCODER_ASM_AVX512.dir/EbComputeSAD_Intrinsic_AVX512.c.obj
+[ 53%] Building C object Source/Lib/Encoder/ASM_AVX512/CMakeFiles/ENCODER_ASM_AVX512.dir/encodetxb_avx512.c.obj
+[ 54%] Building C object Source/Lib/Encoder/ASM_AVX512/CMakeFiles/ENCODER_ASM_AVX512.dir/highbd_fwd_txfm_AVX512.c.obj
+[ 54%] Building C object Source/Lib/Encoder/ASM_AVX512/CMakeFiles/ENCODER_ASM_AVX512.dir/pickrst_avx512.c.obj
+[ 54%] Built target ENCODER_ASM_AVX512
+Scanning dependencies of target FASTFEAT
+[ 55%] Building C object third_party/fastfeat/CMakeFiles/FASTFEAT.dir/fast.c.obj
+[ 55%] Building C object third_party/fastfeat/CMakeFiles/FASTFEAT.dir/fast_9.c.obj
+[ 56%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/EbTemporalFiltering_AVX2.c.obj
+[ 56%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbModeDecisionConfigurationProcess.c.obj
+[ 56%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/EbTransforms_Intrinsic_AVX2.c.obj
+[ 57%] Building C object third_party/fastfeat/CMakeFiles/FASTFEAT.dir/nonmax.c.obj
+[ 57%] Built target FASTFEAT
+Scanning dependencies of target cpuinfo
+[ 58%] Building C object third_party/cpuinfo/CMakeFiles/cpuinfo.dir/src/init.c.obj
+[ 58%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/av1_quantize_avx2.c.obj
+[ 59%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbModeDecisionProcess.c.obj
+[ 60%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/corner_match_avx2.c.obj
+[ 60%] Building C object third_party/cpuinfo/CMakeFiles/cpuinfo.dir/src/api.c.obj
+[ 60%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/dwt_avx2.c.obj
+[ 60%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbMotionEstimation.c.obj
+[ 61%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/enc_warp_plane_avx2.c.obj
+[ 62%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbMotionEstimationContext.c.obj
+[ 62%] Built target cpuinfo
+Scanning dependencies of target ENCODER_GLOBALS
+[ 62%] Building C object Source/Lib/Encoder/Globals/CMakeFiles/ENCODER_GLOBALS.dir/EbEncHandle.c.obj
+[ 62%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/encodetxb_avx2.c.obj
+[ 62%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/fft_avx2.c.obj
+[ 62%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbMotionEstimationProcess.c.obj
+[ 63%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/highbd_fwd_txfm_avx2.c.obj
+[ 63%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbMotionEstimationResults.c.obj
+[ 64%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbNeighborArrays.c.obj
+[ 64%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbPacketizationProcess.c.obj
+[ 64%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbPacketizationReorderQueue.c.obj
+[ 64%] Built target ENCODER_GLOBALS
+Scanning dependencies of target SvtAv1Dec
+[ 65%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbPictureAnalysisProcess.c.obj
+[ 65%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecBitstream.c.obj
+[ 65%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbPictureAnalysisResults.c.obj
+[ 66%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbPictureControlSet.c.obj
+[ 66%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecBitstreamUnit.c.obj
+[ 67%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecCdef.c.obj
+[ 67%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecHandle.c.obj
+[ 67%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbPictureDecisionProcess.c.obj
+[ 67%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbPictureDecisionQueue.c.obj
+[ 68%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbPictureDecisionReorderQueue.c.obj
+[ 68%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbPictureDecisionResults.c.obj
+[ 68%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbPictureDemuxResults.c.obj
+[ 69%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbPictureManagerProcess.c.obj
+[ 69%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecInterPrediction.c.obj
+[ 70%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecIntraPrediction.c.obj
+[ 70%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbPictureManagerQueue.c.obj
+[ 71%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbPictureManagerReorderQueue.c.obj
+[ 71%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbPredictionStructure.c.obj
+[ 71%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecInverseQuantize.c.obj
+[ 71%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbProductCodingLoop.c.obj
+[ 72%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbPsnr.c.obj
+[ 73%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecLF.c.obj
+[ 73%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbRateControlProcess.c.obj
+[ 73%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecMemInit.c.obj
+[ 73%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/highbd_quantize_intrin_avx2.c.obj
+[ 73%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/highbd_variance_avx2.c.obj
+[ 73%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecNbr.c.obj
+[ 74%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/obmc_sad_avx2.c.obj
+[ 75%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecObmc.c.obj
+[ 75%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecParseBlock.c.obj
+[ 75%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/obmc_variance_avx2.c.obj
+[ 75%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbRateControlResults.c.obj
+[ 75%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecParseFrame.c.obj
+[ 76%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbRateControlTables.c.obj
+[ 77%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/palette_avx2.c.obj
+[ 77%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbRateControlTasks.c.obj
+[ 78%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbRateDistortionCost.c.obj
+[ 78%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/pickrst_avx2.c.obj
+[ 79%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecParseHelper.c.obj
+[ 79%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecParseInterBlock.c.obj
+[ 79%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbReferenceObject.c.obj
+[ 80%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecParseObu.c.obj
+[ 80%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbResize.c.obj
+[ 80%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/sse_avx2.c.obj
+[ 81%] Building C object Source/Lib/Encoder/ASM_AVX2/CMakeFiles/ENCODER_ASM_AVX2.dir/variance_avx2.c.obj
+[ 81%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecPicMgr.c.obj
+[ 81%] Built target ENCODER_ASM_AVX2
+[ 81%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecProcess.c.obj
+[ 82%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecProcessBlock.c.obj
+[ 83%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbResourceCoordinationProcess.c.obj
+[ 83%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecProcessFrame.c.obj
+[ 83%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecRestoration.c.obj
+[ 84%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecSuperRes.c.obj
+[ 84%] Building C object Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/Codec/EbDecUtils.c.obj
+[ 84%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbResourceCoordinationResults.c.obj
+[ 84%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbRestProcess.c.obj
+[ 85%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbRestorationPick.c.obj
+[ 85%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbSegmentation.c.obj
+[ 86%] Linking C shared library ../../../../Bin/Release/libSvtAv1Dec.dll
+[ 87%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbSequenceControlSet.c.obj
+/home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/cross_compilers/mingw-w64-x86_64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld: CMakeFiles/SvtAv1Dec.dir/objects.a(common_dsp_rtcd.c.obj):common_dsp_rtcd.c:(.rdata$.refptr.cpuinfo_isa[.refptr.cpuinfo_isa]+0x0): undefined reference to `cpuinfo_isa'
+/home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/cross_compilers/mingw-w64-x86_64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld: CMakeFiles/SvtAv1Dec.dir/objects.a(init.c.obj):init.c:(.text+0xd): undefined reference to `cpuinfo_x86_windows_init'
+/home/srt/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers/sandbox/cross_compilers/mingw-w64-x86_64/bin/../lib/gcc/x86_64-w64-mingw32/8.3.0/../../../../x86_64-w64-mingw32/bin/ld: CMakeFiles/SvtAv1Dec.dir/objects.a(init.c.obj):init.c:(.rdata$.refptr.cpuinfo_x86_windows_init[.refptr.cpuinfo_x86_windows_init]+0x0): undefined reference to `cpuinfo_x86_windows_init'
+collect2: error: ld returned 1 exit status
+make[2]: *** [../Bin/Release/libSvtAv1Dec.dll] Error 1
+make[1]: *** [Source/Lib/Decoder/CMakeFiles/SvtAv1Dec.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 87%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbSourceBasedOperationsProcess.c.obj
+[ 87%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbTemporalFiltering.c.obj
+[ 88%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbTransQuantBuffers.c.obj
+[ 88%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/EbTransforms.c.obj
+[ 88%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/aom_dsp_rtcd.c.obj
+[ 89%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/av1me.c.obj
+[ 89%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/corner_detect.c.obj
+[ 90%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/corner_match.c.obj
+[ 90%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/dwt.c.obj
+[ 90%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/fft.c.obj
+[ 91%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/firstpass.c.obj
+[ 91%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/global_motion.c.obj
+[ 91%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/hash.c.obj
+[ 92%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/hash_motion.c.obj
+[ 92%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/level.c.obj
+[ 93%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/mcomp.c.obj
+[ 93%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/noise_model.c.obj
+[ 93%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/noise_util.c.obj
+[ 94%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/palette.c.obj
+[ 94%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/pass2_strategy.c.obj
+[ 94%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/ransac.c.obj
+[ 95%] Building C object Source/Lib/Encoder/Codec/CMakeFiles/ENCODER_CODEC.dir/vector.c.obj
+[ 95%] Built target ENCODER_CODEC
+make: *** [all] Error 2
+srt@srt-VirtualBox:~/Desktop/HDR10plus_ffmpeg/ffmpeg-windows-build-helpers$ 
